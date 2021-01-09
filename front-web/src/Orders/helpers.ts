@@ -1,11 +1,10 @@
 import { Product } from "./types";
 
-
-export function checkIsSelected(selectedProducts: Product[], product: Product){
+export function checkIsSelected(selectedProducts: Product[], product: Product) {
     return selectedProducts.some(item => item.id === product.id);
 }
 
-export function formatPrice(price: number){
+export function formatPrice(price: number) {
     const formatter = new Intl.NumberFormat('pt-BR', {
         style: 'currency',
         currency: 'BRL',
@@ -14,3 +13,15 @@ export function formatPrice(price: number){
 
     return formatter.format(price);
 }
+
+
+
+
+/*
+
+
+export function checkIsSelected(selectedProducts: Product[], product: Product){
+    return selectedProducts.some(item => item.id === product.id);
+}
+
+}*/
