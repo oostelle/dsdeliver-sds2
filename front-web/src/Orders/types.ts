@@ -1,3 +1,5 @@
+import { StringDecoder } from "string_decoder"
+
 export type Product = {
     id: number;
     name: string;
@@ -11,4 +13,3 @@ export type OrderLocationData = {
     longitude: number;
     address: string;
 }
-
